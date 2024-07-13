@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>responsive car cards</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+        body{
+            background: rgba(27,27,27);
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .card{
+            background: white;
+            width:220px;
+            margin: 10px;
+            border-radius: 15px;
+        }
+        .card-image{
+            background: aqua;
+            height:150px;
+            margin-bottom: 15px;
+            background-size: cover;
+            border-radius: 15px 15px 0 0;
+        }
+        .car-1{
+             background-image: url('benz.jpg');
+        }
+        .car-2{
+            background-image: url('ferrari.jpg');
+        }
+        .car-3{
+            background-image: url('cheverlot.jpg');
+        }
+        .card h2{
+            padding:10px;
+        }
+        .card p{
+            padding:10px
+        }
+        .card a{
+            background-color: black;
+            color:white;
+            padding : 15px 20px;
+            display: block;
+            text-align: center;
+            margin:20px 50px;
+            text-decoration: none;
+        }
+        .card:hover{
+            background-color: rgba(62,62,62);
+            color:white;
+            cursor: pointer;
+            transform: scale(1.03);
+            transition: all 1s ease;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:aquamarine;padding:25px"><center>Image Gallery</center></h1>
+    <section class="container">
+        <div class="card">
+            <div class="card-image car-1"></div>
+            <h2>BENZ</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae a doloribus amet veniam nam nisi natus eius voluptates enim quia recusandae adipisci voluptatibus eos voluptas voluptatum, dolores minus blanditiis pariatur?</p>
+            <a href="Read more">Read more</a>
+        </div><div class="card">
+            <div class="card-image car-2"></div>
+            <h2>FERRARI</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo perspiciatis sunt soluta nostrum, dicta quae voluptate rerum expedita harum, itaque perferendis deleniti ducimus repudiandae ipsum, culpa autem animi unde sequi!</p>
+            <a href="jij">Read more</a>
+        </div>
+        <div class="card">
+            <div class="card-image car-3"></div>
+            <h2>CHEVERLOT</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius animi iste voluptate inventore natus molestiae consequuntur sed laboriosam dolorem? Blanditiis quas odio deserunt iure qui officiis placeat voluptates neque delectus.</p>
+            <a href="fdjs">Read more</a>
+        </div>
+    </section>
+</body>
+</html>
